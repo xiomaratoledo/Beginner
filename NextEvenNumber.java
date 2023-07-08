@@ -1,3 +1,5 @@
+// John Backus
+
 import java.util.Scanner;
 
 class Main {
@@ -8,4 +10,7 @@ class Main {
         System.out.println(nextEven);
     }
 }
-// John Backus
+
+
+// User 75300313
+// you can use this n + 2 - n % 2 
