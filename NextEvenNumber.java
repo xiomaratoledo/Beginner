@@ -2,13 +2,10 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        // put your code here
-        int number = scanner.nextInt();
-        if (number % 2 == 0) {
-            System.out.println(number + 2);
-        } else if (number % 2 != 0) {
-            System.out.println(number + 1);
-        }
+        final Scanner scanner = new Scanner(System.in);
+        final int number = scanner.nextInt();
+        final int nextEven = ((number + 2) / 2) * 2;
+        System.out.println(nextEven);
     }
 }
+// John Backus
