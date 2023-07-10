@@ -24,3 +24,9 @@ class Main {
 
     }
 }
+
+/*
+https://www.geeksforgeeks.org/count-numbers-divisible-m-given-range/
+
+this explanation helped me a bit. hope it helps you too!
+*/
