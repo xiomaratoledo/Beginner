@@ -1,17 +1,19 @@
 import java.util.Scanner;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // start coding here
-        int n = scanner.nextInt();
-        int largest = 0;
-        while (n != 0) {
-            if (largest < n) {
-                largest = n;
+        
+        int number = scanner.nextInt();
+        int max = number;
+
+        while (number != 0) {
+            if (max < number) {
+                max = number;
             }
-            n = scanner.nextInt();
+            number = scanner.nextInt();
         }
-        System.out.println(largest);
+
+        System.out.println(max);
     }
 }
