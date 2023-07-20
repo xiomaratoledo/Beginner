@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -125,29 +126,11 @@ public class Main {
 
         String[] animals = {camel, lion, deer, goose, bat, rabbit};
 
-        // write your code here
-        Scanner scanner = new Scanner(System.in);
-        
-        boolean exit = false;
-        String userInput;
-        while (!exit) {
-            System.out.println("Please enter the number of the habitat you would like to view: ");
-            userInput = scanner.next();
-            if (userInput.equals("0")) {
-                System.out.println(animals[0]);
-            } else if (userInput.equals("1")) {
-                System.out.println(animals[1]);
-            } else if (userInput.equals("2")) {
-                System.out.println(animals[2]);
-            } else if (userInput.equals("3")) {
-                System.out.println(animals[3]);
-            } else if (userInput.equals("4")) {
-                System.out.println(animals[4]);
-            } else if (userInput.equals("5")) {
-                System.out.println(animals[5]);
-            } else if (userInput.equals("exit")) {
-                exit = true;
-            }
+        Scanner scaner = new Scanner(System.in);
+        String nextString = scaner.next();
+        while(!nextString.equals("exit")) {
+            System.out.println(animals[Integer.parseInt(nextString)]);
+            nextString = scaner.next();
         }
         System.out.println("See you later!");
     }
