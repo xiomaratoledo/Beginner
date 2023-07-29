@@ -1,3 +1,4 @@
+//TheIndexOfTheFirstMaxInAnArray
 import java.util.Scanner;
 //2 5 3 4 5
 class Main {
