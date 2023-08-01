@@ -141,4 +141,16 @@ public class Cinema {
             }
         }
     }
+
+    public void printStats() {
+        System.out.println("rowsNumber: " + rows);
+        System.out.println("rowSeatsNumber: " + seats);
+        System.out.println("totalSeats: " + totalSeats);
+        System.out.println("totalIncome: " + totalIncome);
+        System.out.println("frontrows: " + frontrows);
+        System.out.println("backrows: " + backrows);
+        System.out.println(rows / 2);
+        System.out.println(rows / 2 + rows % 2);
+        System.out.println(frontrows * seats * 10 + backrows *seats * 8);
+    }
 }
