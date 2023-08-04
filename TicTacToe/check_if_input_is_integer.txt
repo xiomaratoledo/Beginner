@@ -1,0 +1,3 @@
+to check
+this is the code
+!a.equals("\\d") || !b.equals("\\d")
